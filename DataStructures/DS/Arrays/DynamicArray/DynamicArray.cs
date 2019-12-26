@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace DS.DynamicArray
+namespace DS.Arrays.DynamicArray
 {
     public class DynamicArray<T> : IEnumerable<T> where T : IEquatable<T>
     {
@@ -64,6 +64,15 @@ namespace DS.DynamicArray
                 RemoveAt(index.Value);
         }
 
+        public void Remove()
+        {
+            if (Count > 0)
+            {
+                _items[Count - 1] = default(T);
+                Count--;
+            }
+        }
+
         public void Add(T value)
         {
             if (Count + 1 > Capacity)
@@ -74,7 +83,7 @@ namespace DS.DynamicArray
             _items[Count] = value;
             Count++;
         }
-        
+
         public int? IndexOf(T value)
         {
             for (var i = 0; i < Capacity; i++)
@@ -118,7 +127,7 @@ namespace DS.DynamicArray
 
         public IEnumerator<T> GetEnumerator()
         {
-            foreach(var item in _items)
+            foreach (var item in _items)
                 yield return item;
         }
 

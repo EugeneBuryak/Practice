@@ -1,9 +1,9 @@
 using System;
 using NUnit.Framework;
-using DS.DynamicArray;
+using DS.Arrays.DynamicArray;
 using FluentAssertions;
 
-namespace UTs.DynamicArrayUTs
+namespace UTs.Arrays
 {
     [TestFixture]
     public class DynamicArrayUTs
@@ -74,6 +74,16 @@ namespace UTs.DynamicArrayUTs
 
             sut.Count.Should().Be(2);
             sut[0].Should().Be(1);
+        }
+
+        [Test]
+        public void Remove_ShouldRemoveLastItem()
+        {
+            var sut = new DynamicArray<int> { 0, 1, 2 };
+            sut.Remove();
+
+            sut.Count.Should().Be(2);
+            sut[2].Should().Be(0);
         }
 
         [Test]
