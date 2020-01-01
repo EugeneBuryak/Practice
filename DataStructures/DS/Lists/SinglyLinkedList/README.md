@@ -18,4 +18,3 @@ In a singly linked list, each node stores a reference to an object that is an el
 ## UTs
 
 [->]https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Lists/SinglyLinkedListUTs.cs
-

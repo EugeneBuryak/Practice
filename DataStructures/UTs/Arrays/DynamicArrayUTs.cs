@@ -94,7 +94,7 @@ namespace UTs.Arrays
         }
 
         [Test]
-        public void IndexOf_ShouldReturnIndex_WhenItemExsists()
+        public void IndexOf_ShouldReturnIndex_WhenItemExists()
         {
             var sut = new DynamicArray<int> { 0, 1, 2, 3 };
 
@@ -102,7 +102,7 @@ namespace UTs.Arrays
         }
 
         [Test]
-        public void IndexOf_ShouldReturnNull_WhenItemDoesNotExsits()
+        public void IndexOf_ShouldReturnNull_WhenItemDoesNotExist()
         {
             var sut = new DynamicArray<int> { 0, 1, 2, 3 };
 
@@ -110,7 +110,7 @@ namespace UTs.Arrays
         }
 
         [Test]
-        public void Contains_ShouldReturnFalse_WhenItemDoesNotExsits()
+        public void Contains_ShouldReturnFalse_WhenItemDoesNotExist()
         {
             var sut = new DynamicArray<int> { 0, 1, 2, 3 };
 
@@ -118,7 +118,7 @@ namespace UTs.Arrays
         }
 
         [Test]
-        public void Contains_ShouldReturntrue_WhenItemExsits()
+        public void Contains_ShouldReturntrue_WhenItemExists()
         {
             var sut = new DynamicArray<int> { 0, 1, 2, 3 };
 
