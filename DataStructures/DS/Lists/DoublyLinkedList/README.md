@@ -11,4 +11,5 @@ A Doubly Linked List contains an extra pointer, typically called previous pointe
 | Remove at                  | Θ(n) |
 | Insert at head             | Θ(1) |
 | Insert at tail             | Θ(1) |
+| Insert at                  | Θ(n) |
 | Search                     | Θ(n) |
