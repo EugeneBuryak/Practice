@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DS.Queue.Queue
+namespace DS.Queue.Queues
 {
     public class Queue<T>
     {

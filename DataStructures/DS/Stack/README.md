@@ -18,6 +18,6 @@ A stack is an ordered collection of items for which we can only add or remove it
 ## Underlying Data Structure(s)
 
 * **Array**
-  * Should be able to adjust the size of array. (C# Stack uses array: [->](https://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs))
+  * Should be able to adjust the size of the array. (C# Stack uses array: [->](https://referencesource.microsoft.com/#System/compmod/system/collections/generic/stack.cs))
 * **List**
-  * Doubly and Singly linked.
+  * Doubly- and Singly-linked.

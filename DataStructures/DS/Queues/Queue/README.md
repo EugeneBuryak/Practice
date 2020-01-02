@@ -19,6 +19,6 @@ A Queue is a linear structure which follows a particular order in which the oper
 ## Underlying Data Structure(s)
 
 * **Array**
-  * Should be able to adjust the size of array. (C# Queue uses array: [->](https://referencesource.microsoft.com/#System/compmod/system/collections/generic/queue.cs))
+  * Should be able to adjust the size of the array. (C# Queue uses array: [->](https://referencesource.microsoft.com/#System/compmod/system/collections/generic/queue.cs))
 * **List**
-  * Doubly and Singly linked.
+  * Doubly- and Singly-linked.
