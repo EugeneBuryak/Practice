@@ -17,4 +17,9 @@ In a singly linked list, each node stores a reference to an object that is an el
 
 ## UTs
 
-[->]https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Lists/SinglyLinkedListUTs.cs
+[->](https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Lists/SinglyLinkedListUTs.cs)
+
+## Underlying Data Structure(s)
+
+* Array (C# List uses arrays: [->](https://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs))
+* References (C# LinkedList uses references: [->](https://referencesource.microsoft.com/#System/compmod/system/collections/generic/linkedlist.cs))

@@ -17,7 +17,7 @@ namespace UTs.Stack
         }
 
         [Test]
-        public void Peek_ShouldREturnItemWithourRemovingIt()
+        public void Peek_ShouldReturnItemWithoutRemovingIt()
         {
             _sut.Push(0);
             _sut.Push(1);

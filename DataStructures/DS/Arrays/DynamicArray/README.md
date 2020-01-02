@@ -22,4 +22,4 @@ Dynamic arrays are arrays that can scale capacity dynamically.
 
 ## Unit tests
 
-[->]https://github.com/EugeneBuryak/Practice/tree/master/DataStructures/UTs/DynamicArray
+[->](https://github.com/EugeneBuryak/Practice/tree/master/DataStructures/UTs/DynamicArray)
