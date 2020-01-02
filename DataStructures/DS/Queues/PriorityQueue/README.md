@@ -10,11 +10,10 @@ Priority Queue is an extension of queue with following properties.
 
 |                       | Time      |
 | ---                   | ---       |
-| Construction (Heap)   | Θ(n)      |
-| Poll                  | Θ(log(n)) |
+| Dequeue               | Θ(log(n)) |
 | Peek                  | Θ(1)      |
-| Add (Heap)            | Θ(log(n)) |
-| Add (List)            | Θ(n)      |
+| Enqueue (Heap)        | Θ(log(n)) |
+| Enqueue (List)        | Θ(n)      |
 | Remove (Naive)        | Θ(n)      |
 | Remove (Hash table)   | Θ(log(n)) |
 | Contains (Naive)      | Θ(n)      |
