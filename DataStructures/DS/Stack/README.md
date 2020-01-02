@@ -13,7 +13,7 @@ A stack is an ordered collection of items for which we can only add or remove it
 
 ## UTs
 
-[->](UTs\Stack\StackUTs.cs)
+[->](https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Stack/StackUTs.cs)
 
 ## Underlying Data Structure(s)
 

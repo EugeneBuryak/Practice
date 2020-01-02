@@ -14,7 +14,7 @@ A Queue is a linear structure which follows a particular order in which the oper
 
 ## UTs
 
-[->](UTs\Queue\QueueUTs.cs)
+[->](https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Queue/QueueUTs.cs)
 
 ## Underlying Data Structure(s)
 
