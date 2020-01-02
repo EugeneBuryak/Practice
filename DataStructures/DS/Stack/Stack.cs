@@ -5,7 +5,7 @@ namespace DS.Stack
 {
     public class Stack<T>
     {
-        private List<T> _list = new List<T>();
+        private IList<T> _list = new List<T>();
         public int Count => _list.Count;
 
         public bool IsEmpty()
