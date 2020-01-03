@@ -4,16 +4,24 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="nunit" Version="3.12.0"/>
-    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1"/>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0"/>
-    <PackageReference Include="NUnit" Version="3.12.0"/>
-    <PackageReference Include="FluentAssertions" Version="5.9.0"/>
+    <PackageReference Include="coverlet.collector" Version="1.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.msbuild" Version="2.8.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DynamicArray\"/>
+    <Folder Include="DynamicArray\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DS\DS.csproj"/>
+    <ProjectReference Include="..\DS\DS.csproj" />
   </ItemGroup>
 </Project>
