@@ -1,10 +1,10 @@
-using System;
-using DS.Lists.DoublyLinkedList;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Lists
 {
+    using System;
+    using DS.Lists.DoublyLinkedList;
+    using FluentAssertions;
+    using NUnit.Framework;
+
     [TestFixture]
     public class DoublyLinkedListUTs
     {
@@ -87,7 +87,7 @@ namespace UTs.Lists
         }
 
         [Test]
-        public void Add_ShouldInsertAtGivenInex()
+        public void Add_ShouldInsertAtGivenIndex()
         {
             _sut.Add(2);
             _sut.Add(3);
@@ -231,7 +231,7 @@ namespace UTs.Lists
         }
 
         [Test]
-        public void Contains_ShouldReturnFalse_WhenValueDoesNotExsist()
+        public void Contains_ShouldReturnFalse_WhenValueDoesNotExist()
         {
             _sut.Add(0);
             _sut.Add(1);

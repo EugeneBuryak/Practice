@@ -1,10 +1,10 @@
-using System;
-using DS.Lists.SinglyLinkedList;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Lists
 {
+    using System;
+    using DS.Lists.SinglyLinkedList;
+    using FluentAssertions;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class SinglyLinkedListUTs
     {

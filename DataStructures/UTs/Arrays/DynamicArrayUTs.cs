@@ -1,10 +1,10 @@
-using System;
-using NUnit.Framework;
-using DS.Arrays.DynamicArray;
-using FluentAssertions;
-
 namespace UTs.Arrays
 {
+    using System;
+    using DS.Arrays.DynamicArray;
+    using FluentAssertions;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class DynamicArrayUTs
     {
@@ -126,7 +126,7 @@ namespace UTs.Arrays
         }
 
         [Test]
-        public void ClearItems_ShoulDefaultItems()
+        public void ClearItems_ShouldDefaultItems()
         {
             var sut = new DynamicArray<int> { 0, 1, 2, 3 };
             sut.ClearItems();

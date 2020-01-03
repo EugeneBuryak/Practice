@@ -1,10 +1,10 @@
-using System;
-using DS.Queue.Queues;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Queues
 {
+    using System;
+    using DS.Queue.Queues;
+    using FluentAssertions;
+    using NUnit.Framework;
+
     [TestFixture]
     public class QueueUTs
     {
@@ -43,7 +43,7 @@ namespace UTs.Queues
         }
 
         [Test]
-        public void Dequeue_ShoudlRemoveFirstItem()
+        public void Dequeue_ShouldRemoveFirstItem()
         {
             _sut.Enqueue(0);
             _sut.Enqueue(1);
@@ -59,6 +59,5 @@ namespace UTs.Queues
         {
             Assert.Throws(typeof(NullReferenceException), () => _sut.Dequeue(), "Queue is empty.");
         }
-        
     }
 }

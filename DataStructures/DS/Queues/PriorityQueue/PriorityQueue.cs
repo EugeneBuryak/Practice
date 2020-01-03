@@ -1,6 +1,6 @@
-using System.Linq;
 using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using DS.Trees.Heap;
 
 namespace DS.Queue.PriorityQueues

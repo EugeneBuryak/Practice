@@ -1,10 +1,10 @@
-using System;
-using DS.Stack;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Stack
 {
+    using System;
+    using DS.Stack;
+    using FluentAssertions;
+    using NUnit.Framework;
+
     [TestFixture]
     public class StackUTs
     {
@@ -42,7 +42,7 @@ namespace UTs.Stack
         }
 
         [Test]
-        public void Pop_ShoudlRemoveLastItem()
+        public void Pop_ShouldRemoveLastItem()
         {
             _sut.Push(0);
             _sut.Push(1);

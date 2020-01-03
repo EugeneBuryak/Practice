@@ -1,10 +1,10 @@
-using System;
-using DS.Trees.Heap;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Trees
 {
+    using System;
+    using DS.Trees.Heap;
+    using FluentAssertions;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class BinaryHeapUTs
     {

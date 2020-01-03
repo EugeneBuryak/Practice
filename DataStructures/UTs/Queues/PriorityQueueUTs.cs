@@ -1,9 +1,9 @@
-using DS.Queue.PriorityQueues;
-using FluentAssertions;
-using NUnit.Framework;
-
 namespace UTs.Queues
 {
+    using DS.Queue.PriorityQueues;
+    using FluentAssertions;
+    using NUnit.Framework;
+    
     [TestFixture]
     public class PriorityQueueUTs
     {
@@ -76,7 +76,7 @@ namespace UTs.Queues
             _sut.Enqueue(10, 0);
 
             var node = _sut.Peek();
-            
+
             node.priority.Should().Be(0);
             node.value.Should().Be(10);
             _sut.Count.Should().Be(3);
