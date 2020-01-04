@@ -3,7 +3,7 @@ namespace UTs.Queues
     using DS.Queue.PriorityQueues;
     using FluentAssertions;
     using NUnit.Framework;
-    
+
     [TestFixture]
     public class PriorityQueueUTs
     {
@@ -41,7 +41,7 @@ namespace UTs.Queues
             _sut.Enqueue(0, 10);
             _sut.Enqueue(1);
 
-            _sut.ToArray().Should().BeEquivalentTo(new (int, int)[] { (0, 10), (1, 11) });
+            _sut.ToArray().Should().BeEquivalentTo(new (int, int)[] { (0, 10), (1, 11) }, opt => opt.WithStrictOrdering());
         }
 
         [Test]
@@ -51,7 +51,7 @@ namespace UTs.Queues
             _sut.Enqueue(1, 1);
             _sut.Enqueue(10, 0);
 
-            _sut.ToArray().Should().BeEquivalentTo(new (int, int)[] { (0, 0), (10, 0), (1, 1) });
+            _sut.ToArray().Should().BeEquivalentTo(new (int, int)[] { (0, 0), (1, 1), (10, 0) }, opt => opt.WithStrictOrdering());
         }
 
         [Test]

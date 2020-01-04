@@ -272,7 +272,7 @@ namespace UTs.Lists
 
             var array = _sut.ToArray();
 
-            array.Should().BeEquivalentTo(new int[] { 0, 1, 2 });
+            array.Should().BeEquivalentTo(new int[] { 0, 1, 2 }, opt => opt.WithStrictOrdering());
         }
 
         [Test]

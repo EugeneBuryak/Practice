@@ -1,7 +1,7 @@
 namespace UTs.Trees
 {
     using System;
-    using DS.Trees.Heap;
+    using DS.Trees.BinaryHeap;
     using FluentAssertions;
     using NUnit.Framework;
     
@@ -32,7 +32,7 @@ namespace UTs.Trees
             _sut.Add(4);
             _sut.Add(1);
 
-            _sut.ToArray().Should().BeEquivalentTo(new int[] { 0, 1, 2, 4, 4 });
+            _sut.ToArray().Should().BeEquivalentTo(new int[] { 0, 1, 4, 4, 2 }, opt => opt.WithStrictOrdering());
         }
 
         [Test]
@@ -45,7 +45,7 @@ namespace UTs.Trees
 
             _sut.Poll();
 
-            _sut.ToArray().Should().BeEquivalentTo(new int[] { 1, 3, 2 });
+            _sut.ToArray().Should().BeEquivalentTo(new int[] { 1, 3, 2 }, opt => opt.WithStrictOrdering());
         }
 
         [Test]
@@ -61,7 +61,7 @@ namespace UTs.Trees
 
             _sut.Poll();
 
-            _sut.ToArray().Should().BeEquivalentTo(new int[] { 1, 2, 1, 3, 3, 3 });
+            _sut.ToArray().Should().BeEquivalentTo(new int[] { 1, 2, 1, 3, 3, 3 }, opt => opt.WithStrictOrdering());
         }
 
         [Test]
@@ -158,7 +158,7 @@ namespace UTs.Trees
         {
             _sut = new BinaryHeap<int>(new int[] { 4, 5, 1, 0, 3, 2, 6 });
 
-            _sut.ToArray().Should().BeEquivalentTo(new int[] { 0, 3, 1, 4, 5, 2, 6 });
+            _sut.ToArray().Should().BeEquivalentTo(new int[] { 0, 3, 1, 5, 4, 2, 6 }, opt => opt.WithStrictOrdering());
         }
 
         private bool BinaryHeapInvarianceCheck(int currentIndex)

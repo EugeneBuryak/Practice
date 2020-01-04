@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DS.Trees.Heap
+namespace DS.Trees.BinaryHeap
 {
     public class BinaryHeap<T> where T : IComparable<T>, IEquatable<T>
     {
@@ -145,7 +145,7 @@ namespace DS.Trees.Heap
 
             while (parentIndex >= 0
                 && currentIndex != parentIndex
-                && CompareNodes(currentIndex, parentIndex) <= 0)
+                && CompareNodes(currentIndex, parentIndex) < 0)
             {
                 Swap(currentIndex, parentIndex);
                 currentIndex = parentIndex;

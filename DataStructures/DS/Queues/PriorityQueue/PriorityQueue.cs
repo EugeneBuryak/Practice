@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using DS.Trees.Heap;
+using DS.Trees.BinaryHeap;
 
 namespace DS.Queue.PriorityQueues
 {

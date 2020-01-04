@@ -59,7 +59,7 @@ namespace UTs.UnionFind
             _sut.Union(1, 2);
             _sut.Union(1, 3);
 
-            _sut.ToArray().Should().BeEquivalentTo(new int[] {0, 2, 2, 2, 4});
+            _sut.ToArray().Should().BeEquivalentTo(new int[] {0, 2, 2, 2, 4}, opt => opt.WithStrictOrdering());
             _sut.Count.Should().Be(3);
         }
 

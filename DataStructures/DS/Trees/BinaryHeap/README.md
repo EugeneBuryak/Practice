@@ -19,16 +19,4 @@ A Binary Heap is a Binary Tree with following properties.
 | Contains (Naive)      | Θ(n)      |
 | Contains (Hash table) | Θ(1)      |
 
-## UTs
-
-[->](https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Trees/BinaryHeapUTs.cs)
-
-## Underlying Data Structure(s)
-
-* Arrays
-* Lists
-
-## Related Algorithms
-
-* **Min to Max conversion**
-* ...
+## [Unit tests](https://github.com/EugeneBuryak/Practice/blob/master/DataStructures/UTs/Trees/BinaryHeapUTs.cs)
