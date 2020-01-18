@@ -11,6 +11,7 @@ namespace DS.Hash.HashTable
         private int _capacity;
         private double _growthFactor;
         private int _treashold;
+        private int _spaceTaken;
 
         public int Count { get; private set; }
 
@@ -32,7 +33,7 @@ namespace DS.Hash.HashTable
             if (value == null)
                 throw new ArgumentException("Value should not be null.");
 
-            if (Count + 1 == _treashold)
+            if (_spaceTaken + 1 == _treashold)
                 Resize();
 
             var (hash, list) = Get(value);
@@ -41,6 +42,7 @@ namespace DS.Hash.HashTable
             {
                 list = new List<T>();
                 _table[hash] = list;
+                _spaceTaken++;
             }
 
             list.Add(value);
@@ -120,6 +122,7 @@ namespace DS.Hash.HashTable
         {
             _capacity *= 2;
             _treashold = (int)(_capacity * _growthFactor);
+            _spaceTaken = 0;
             var _tmp = new List<T>[_capacity];
 
             foreach (var item in this)
@@ -132,6 +135,7 @@ namespace DS.Hash.HashTable
                 {
                     list = new List<T>();
                     _tmp[normalizedHash] = list;
+                    _spaceTaken++;
                 }
 
                 list.Add(item);
